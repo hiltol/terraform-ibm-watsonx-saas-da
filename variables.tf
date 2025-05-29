@@ -53,11 +53,11 @@ variable "resource_prefix" {
 }
 
 variable "cos_plan" {
-  default     = "standard"
+  default     = "lite"
   description = "The plan that's used to provision the Cloud Object Storage instance."
   type        = string
   validation {
-    condition     = contains(["standard"], var.cos_plan)
+    condition     = contains(["standard", "lite"], var.cos_plan)
     error_message = "You must use a standard plan. Standard plan instances are the most common and are recommended for most workloads."
   }
 }
