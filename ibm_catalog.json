@@ -342,8 +342,8 @@
               "key": "cos_plan",
               "options": [
                 {
-                  "displayname": "standard",
-                  "value": "standard"
+                  "displayname": "lite",
+                  "value": "lite"
                 }
               ]
             },
